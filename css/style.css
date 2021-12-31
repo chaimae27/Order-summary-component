@@ -1,0 +1,157 @@
+:root {
+  /* ### Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* ### Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: url("../images/pattern-background-desktop.svg");
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--Pale-blue);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 340px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card .container {
+  background-color: var(--Very-pale-blue);
+  /* max-width: 25%; */
+  height: 34rem;
+  margin: 50px auto;
+  z-index: 999;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, 0.11);
+}
+
+.card .container .heading img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.card .container .info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+  /* justify-content: space-between; */
+  align-content: space-between;
+}
+
+.card .container .info h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 900;
+}
+
+.card .container .info p {
+  color: var(--Desaturated-blue);
+  font-size: 16px;
+  margin-top: 11px;
+}
+
+.card .container .plan {
+  background-color: #f0f1fa;
+  max-width: 84%;
+  height: 74px;
+  border-radius: 8px;
+  margin: 18px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card .container .plan img {
+  position: absolute;
+  margin: 11px;
+}
+
+.card .container .plan .price {
+  margin: 15px auto;
+}
+
+.card .container .plan .price span {
+  color: var(--Desaturated-blue);
+}
+
+.card .container .plan a {
+  color: var(--Bright-blue);
+  font-weight: 800;
+  margin-top: 28px;
+  font-size: 13px;
+  margin-right: 15px;
+}
+
+.card .container .plan a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.card .container .action-button {
+  max-width: 84%;
+  margin: 18px auto;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .container .action-button .payment-button,
+.card .container .action-button .cancel-button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.card .container .action-button .payment-button {
+  background-color: var(--Bright-blue);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 11px 25px 0 hsl(245deg 84% 54% / 20%);
+}
+
+.card .container .action-button .payment-button:hover {
+  opacity: 0.7;
+}
+
+.card .container .action-button .cancel-button {
+  /* margin-top: 5px; */
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.card .container .action-button .cancel-button:hover {
+  /* margin-top: 5px; */
+  color: black;
+}
+
+/* Responsive */
+@media (min-width: 360px) {
+  .card .container {
+    width: 22rem;
+  }
+}
